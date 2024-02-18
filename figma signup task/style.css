@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+  }
+  
+/* media queries for resizing */
+ body{
+    background: rgba(247, 248, 249, 1);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+.out-box{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    position: relative;
+    background-color: #FFFFFF;
+    width: 520px;
+    height: 728px;
+    /* border: 1px solid black; */
+    margin-left: 150px;
+    border-width: 1px;
+    border-radius: 40px;
+    box-shadow: 0px 12px 36px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px; /* Ensure the form takes full height */
+    /* padding: 20px; Add padding for better spacing */
+}
+
+div{
+    padding: 8px;
+}
+.heading{
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    padding-bottom: 20px;
+}
+label{
+    
+    color:rgba(75, 87, 104, 1);
+    font-size: 16px;
+    position: absolute;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+input{
+    margin-top: 25px;
+    padding-left: 10px;
+    width: 360px;
+    height: 48px;
+    border-radius: 6px;
+    background-color: rgba(247, 248, 249, 0.5);
+    border: 1px solid rgba(231, 234, 238, 1);
+    color:rgba(25, 29, 35, 1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+
+.btn1{
+    margin-top: 25px;
+    width: 360px;
+    height: 48px;
+    border-radius: 35px;
+    gap: 8px;
+    color:  rgba(255, 255, 255, 1);
+    background: rgba(16, 185, 129, 1);
+    border:rgba(16, 185, 129, 1);
+    font-size: 16px;
+}
+
+p{
+    width: 23px;
+    height: 16px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color:rgba(75, 87, 104, 1);
+
+}
+.btn2{
+    width: 360px;
+    height: 48px;
+    color:  rgba(255, 255, 255, 1);
+    border-radius: 35px; 
+    background: rgba(25, 29, 35, 1);
+    font-size: 16px;
+    border:rgba(25, 29, 35, 1);
+}
+
+
+.last{
+    display: inline;
+    height: 16px;
+    font-size: 16px;
+
+}
+
+span{
+    color: rgba(16, 185, 129, 1);
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 90%; /* Adjust card width for smaller screens */
+    }
+
+    .form {
+        padding: 10px; /* Adjust form padding */
+    }
+
+    .heading {
+        font-size: 24px; /* Adjust heading font size */
+        line-height: 36px; /* Adjust heading line height */
+    }
+
+    input {
+        width: 90%; /* Adjust input width */
+        max-width: 320px; /* Set maximum width for input */
+        height: 40px; /* Adjust input height */
+        font-size: 14px; /* Adjust input font size */
+    }
+
+    .btn1,
+    .btn2 {
+        width: 90%; /* Adjust button width */
+        max-width: 320px; /* Set maximum width for buttons */
+        height: 40px; /* Adjust button height */
+        font-size: 14px; /* Adjust button font size */
+    }
+
+    p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+}
